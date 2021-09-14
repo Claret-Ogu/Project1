@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* NavBar */
+.navbar {
+    text-align: center;
+    background-color: #333
+}
+
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;     /*Displaying the links as block elements makes the whole link area clickable (not just the text) */
+    width: 80px;        /* Specified width of block elements */
+    color: #F1F1F1;
+    padding: 10px 16px;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #111;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+
+
+/* Add an "active" class to the current link to let the user know which page he/she is on 
+.active {
+    background-color: #04AA6D;
+    color: #F1F1F1;
+}
+*/
+
+
+
+/* Columns */
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear foats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - Makes the 3 columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+}
